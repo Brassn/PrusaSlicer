@@ -1775,7 +1775,7 @@ void GUI_App::MacOpenFiles(const wxArrayString &fileNames)
 #if ENABLE_DRAG_AND_DROP_FIX
             wxArrayString input_files;
             for (size_t i = 0; i < non_gcode_files.size(); ++i) {
-                input_files.push_back(non_gcode_files[i]));
+                input_files.push_back(non_gcode_files[i]);
             }
             this->q->load_files(input_files);
 #else

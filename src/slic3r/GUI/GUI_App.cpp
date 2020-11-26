@@ -1777,7 +1777,7 @@ void GUI_App::MacOpenFiles(const wxArrayString &fileNames)
             for (size_t i = 0; i < non_gcode_files.size(); ++i) {
                 input_files.push_back(non_gcode_files[i]);
             }
-            this->load_files(input_files);
+            this->plater()->load_files(input_files);
 #else
             this->plater()->load_files(files, true, true);
 #endif     
